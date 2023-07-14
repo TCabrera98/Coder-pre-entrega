@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+</body>
+
+</html>
+ml>
+
+{% extends 'base.html' %}
+
+{% block title %}Mi Página{% endblock %}
+
+{% block content %}
+<h1>Bienvenido a mi página</h1>
+<p>Contenido de mi página...</p>
+{% endblock %}
